@@ -1,39 +1,26 @@
-package com.chandu.question_service.model;
+package com.chandu.quiz_service.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.*;
 
-@Entity
-public class Question
+
+public class QuestionWrapper
 {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String questionTitle;
     private String option1;
     private String option2;
     private String option3;
     private String option4;
-    private String rightAnswer;
-    private String difficultyLevel;
-    private String category;
 
-    public Question() {
+    public QuestionWrapper() {
     }
 
-    public Question(Integer id, String questionTitle, String option1, String option2, String option3, String option4, String rightAnswer, String difficultyLevel, String category) {
+    public QuestionWrapper(Integer id, String questionTitle, String option1, String option2, String option3, String option4) {
         this.id = id;
         this.questionTitle = questionTitle;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
         this.option4 = option4;
-        this.rightAnswer = rightAnswer;
-        this.difficultyLevel = difficultyLevel;
-        this.category = category;
     }
 
     public Integer getId() {
@@ -82,29 +69,5 @@ public class Question
 
     public void setOption4(String option4) {
         this.option4 = option4;
-    }
-
-    public String getRightAnswer() {
-        return rightAnswer;
-    }
-
-    public void setRightAnswer(String rightAnswer) {
-        this.rightAnswer = rightAnswer;
-    }
-
-    public String getDifficultyLevel() {
-        return difficultyLevel;
-    }
-
-    public void setDifficultyLevel(String difficultyLevel) {
-        this.difficultyLevel = difficultyLevel;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 }

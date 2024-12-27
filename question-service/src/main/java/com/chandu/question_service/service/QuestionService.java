@@ -4,6 +4,7 @@ import com.chandu.question_service.model.Question;
 import com.chandu.question_service.model.QuestionWrapper;
 import com.chandu.question_service.model.Response;
 import com.chandu.question_service.repository.QuestionRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -50,7 +51,7 @@ public class QuestionService
         }
     }
 
-    public ResponseEntity<?> getQuestionsForQuiz(String categoryName, int numQuestions)
+    public ResponseEntity<List<Integer>> getQuestionsForQuiz(String categoryName, int numQuestions)
     {
         List<Integer> questions=questionRepository.findRandomQuestionsByCategory(categoryName,numQuestions);
 

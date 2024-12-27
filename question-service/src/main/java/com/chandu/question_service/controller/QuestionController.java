@@ -4,9 +4,9 @@ import com.chandu.question_service.model.Question;
 import com.chandu.question_service.model.Response;
 import com.chandu.question_service.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -15,6 +15,9 @@ public class QuestionController
 {
     @Autowired
     private QuestionService questionService;
+
+    @Autowired
+    private Environment environment;
 
     @GetMapping("/allQuestions")
     public ResponseEntity<List<Question>> getAllQuestions()
@@ -39,7 +42,7 @@ public class QuestionController
     //getScore
 
     @GetMapping("/generate")
-    public ResponseEntity<?> getQuestionsForQuiz(@RequestParam String categoryName,@RequestParam int numQuestions)
+    public ResponseEntity<List<Integer>> getQuestionsForQuiz(@RequestParam String categoryName,@RequestParam int numQuestions)
     {
         return questionService.getQuestionsForQuiz(categoryName,numQuestions);
     }
@@ -47,6 +50,7 @@ public class QuestionController
     @PostMapping("/getQuestions")
     public ResponseEntity<?> getQuestionsFromId(@RequestBody List<Integer> questionIds)
     {
+        System.out.println(environment.getProperty("local.server.port"));
         return questionService.getQuestionsForId(questionIds);
     }
 
