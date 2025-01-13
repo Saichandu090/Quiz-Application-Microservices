@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e814e7-5b1a-4ede-8055-d85ae244b625" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Quiz Application.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/controller/QuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/dto/QuizDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/feign/QuizInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/model/QuestionWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/model/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/model/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/repository/QuizRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/service/QuizService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-service/src/main/resources/application-mysql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/model/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/chandu/question_service/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/QuizServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-service/src/main/java/com/chandu/quiz_service/QuizServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +33,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.QuestionServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.QuizServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServiceRegistryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.api-gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.api-gateway [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/api-gateway&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.QuestionServiceApplication.executor": "Run",
+    "Application.QuizServiceApplication.executor": "Run",
+    "Application.ServiceRegistryApplication.executor": "Run",
+    "Maven.api-gateway [clean].executor": "Run",
+    "Maven.api-gateway [install].executor": "Run",
+    "RunOnceActivity.AccountsToCodyMigration": "true",
+    "RunOnceActivity.ChatTagsLlmMigration": "true",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Time-Management-System/time-management-system-backend",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager" selected="Application.QuizServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chandu.api_gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -135,9 +129,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuizServiceApplication" />
-        <item itemvalue="Application.QuestionServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.QuestionServiceApplication" />
+        <item itemvalue="Application.QuizServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
